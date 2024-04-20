@@ -1,0 +1,15 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    /* Aplica uma transição suave à rolagem */
+  }
+  header {
+    background-color: black;
+    width: 100;
+  }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Um site para aprender a programar">
+  
+  <!-- Adicionando a biblioteca Font Awesome para obter o ícone -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.css">
+  
+
+  <!-- CSS STYLES -->
+  <link rel="stylesheet" href="/devweb/assets/global.css">
+  <link rel="stylesheet" href="/devweb/assets/style.css">
+  <link rel="stylesheet" href="/devweb/assets/responsive.css">
+  
+  <title>WebDevwonders</title>
+</head>
+
+<body>
+  <header>
+    <button id="btn-abrir-menu">&#9776;</button>
+    <div class="menu-lateral">
+      <!-- Adicionando o ícone de fechar -->
+      <ul class="meunome">
+        <li><a class="link-menu" href="#" data-target="index">Home</a></li>
+        <li><a class="link-menu" href="#" data-target="sobre">Sobre</a></li>
+        <li><a class="link-menu" href="#" data-target="projeto">Projetos</a></li>
+        <li><a class="link-menu" href="#" data-target="contato">Contato</a></li>
+      </ul>
+    </div>
+    <div class="caixa-principal">
+      <h1>WebDev<span>Wonders</span></h1>
+      <nav class="menu-principal">
+        <ul>
+          <li><a class="link-menu" href="#" data-target="index">Home</a></li>
+          <li><a class="link-menu" href="#" data-target="sobre">Sobre</a></li>
+          <li><a class="link-menu" href="#" data-target="projeto">Projetos</a></li>
+          <li><a class="link-menu" href="#" data-target="contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="sobre" class="animate hidden">
+    <div>
+      <h2>Sobre</h2>
+      <p>Olá, sou Pedro sou um programador front-end apaixonado por criar experiências web incríveis. Combinando meu
+        conhecimento em HTML, CSS e JavaScript, estou comprometido em desenvolver sites modernos e responsivos que
+        cativam os usuários.</p>
+      <p>Estou sempre em busca de novos desafios e oportunidades para colaborar em projetos interessantes. Se você está
+        procurando um desenvolvedor front-end comprometido e talentoso, entre em contato para discutir como posso ajudar a
+        trazer sua visão para a vida!</p>
+      <button><a href="#contato">Entre em contato</a></button>
+    </div>
+  </section>
+
+  <section class="projeto animate hidden" id="projeto">
+    <h3>Projeto</h3>
+    <div class="caixa-projeto">
+      <img src="https://www.alegriafm.net/files/2020/05/previs%C3%A3odotempo.png" alt="Projeto 1">
+      <a href="https://tempo360.netlify.app/" target="_blank"><button>Acesse o projeto</button></a>
+    </div>
+  </section>
+
+  <footer class="social animate hidden" id="contato">
+    <h2>Contato</h2>
+    <div class="caixa-contato">
+      <a href="https://wa.me/558183797457" target="_blank">
+        <img src="WhatsApp .jpg" alt="WhatsApp">
+      </a>
+      <a href="https://www.linkedin.com/in/pedro-programador/" target="_blank">
+        <img src="linkedin.jpg" alt="linkedin">
+      </a>
+    </div>
+  </footer>
+
+  <footer class="rodape">
+    <h5>&copy; 2024 Pedro Lucas</h5>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

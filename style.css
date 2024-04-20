@@ -1,0 +1,289 @@
+
+  /*cabeçalho */
+  .caixa-principal {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .caixa-principal {
+    background-image: url(https://smartdemand.com.br/thumb/blog/1/780/400/0028996cdbf9fca1fcb720fe6f359d56.jpg);
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  
+  .caixa-principal h1 {
+    font-size: 120%;
+    color: white;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .caixa-principal h1 span {
+    color: #00ff00;
+  }
+  
+  .menu-principal ul {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: px;
+    transform: scale(1);
+    transition: 0.5s;
+  }
+  
+  li {
+    color: white;
+    display: inline-block;
+    padding: 20px;
+    font-size: 70%;
+    cursor: pointer;
+  
+  }
+  
+  .link-menu {
+    color: white;
+    text-decoration: none;
+    border: 2px solid #08d908;
+    padding: 2px 8px;
+    transition: color 0.5s, background-color 0.5s;
+  
+  }
+  
+  .link-menu:hover {
+    color: #08d908;
+    background-color: transparent;
+  }
+  
+  /* sobre */
+
+section div{
+  background-color: black;
+}
+
+ section div h2 {
+  color: white;
+  display: inline-block;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 30px;
+  margin: 10px;
+}
+
+/* Defina a animação de fade-in */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Adicione uma classe para animar a transição */
+.animate {
+  animation: fade-in 0.5s ease-in-out; /* Ajuste a duração e a função de temporização conforme necessário */
+}
+
+section div p {
+  color: white;
+  font-size: 120%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s, color 0.5s; /* Adicionada transição suave para a cor do texto e fundo */
+  padding: 20px;
+  animation: fadeIn 1s ease forwards;
+}
+
+section button {
+  background-color: black;
+  color: white;
+  border: 2px solid #00ff00;  
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 14px; /* Ajustado tamanho da fonte para melhor legibilidade */
+  transition: background-color 0.5s, color 0.5s;
+  border-radius: 10px;
+  margin: 20px;
+  margin-top: 5px;
+}
+section button a {
+  text-decoration: none;
+  color: white;
+}
+
+section button:hover {
+  background-color: #00ff00;
+  color: black;
+}
+
+  /*********Projetos**********/
+  .projeto{
+    background-color: black;
+  }
+  .projeto h3 {
+    color: white;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    padding: 10px 20px;
+    margin: 10px;
+    margin-bottom: 20px;
+  }
+  .caixa-projeto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  .caixa-projeto img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    
+  }
+  .caixa-projeto button{
+    background-color: black;
+    color: white;
+    border: 3px solid #00ff00;  
+    cursor: pointer;
+    padding: 10;
+    font-size: 20px;
+    transition: backgroud-color 0.5s, color 0.5s;
+    margin-top: 20px;
+    
+  }
+  /* contato */
+  .social{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .social h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .social  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  .social img:hover{
+    transform: scale(1.5);
+    transition: 0.3s;
+  }
+  .rodape {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+   
+  }
+
+/* Estilos para ocultar elementos */
+.hidden {
+  display: none;
+}
+
+/* Estilos para animação de transição */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Estilos para o menu lateral */
+/* Estilos para ocultar elementos */
+.hidden {
+  display: none;
+}
+
+/* Estilos para animação de transição */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Estilos para o menu lateral */
+@media screen and (max-width: 763px){
+.menu-lateral {
+  position: fixed;
+  top: 0;
+  right: -250px; /* Escondido por padrão */
+  width: 250px;
+  height: 100%;
+  background-color: black;
+  z-index: 1000; /* Garante que o menu fique acima do conteúdo */
+  transition: right 0.3s ease;
+}
+
+.menu-lateral ul {
+  list-style: none;
+  padding: 20px;
+}
+
+.menu-lateral ul li {
+  margin-bottom: 15px;
+}
+
+.menu-lateral ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.menu-lateral ul li a:hover {
+  color: #00ff00;
+}
+
+/* Estilos para o botão de abertura do menu */
+#btn-abrir-menu {
+  position: fixed;
+  top: 20px;
+  right: 20px; /* Posicionado à direita */
+  z-index: 1001; /* Garante que o botão fique acima do menu */
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+#btn-abrir-menu.esconder-icone {
+  display: none; /* Oculta o ícone quando a classe estiver presente */
+}
+}
+
+
+
+  
+  
